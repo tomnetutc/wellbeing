@@ -1,0 +1,51 @@
+{
+  "name": "wbeat-website",
+  "homepage": "https://tomnetutc.github.io/wbeat",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --base=https://tomnetutc.github.io/wbeat/",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@octokit/types": "^8.0.0",
+    "@types/d3": "^7.4.0",
+    "@types/lodash": "^4.14.185",
+    "@types/react-bootstrap-range-slider": "^1.2.1",
+    "@types/react-router-hash-link": "^2.4.5",
+    "@types/recharts": "^1.8.23",
+    "bootstrap": "^5.2.1",
+    "d3": "^7.6.1",
+    "danfojs": "^1.1.1",
+    "datamaps": "^0.5.9",
+    "export-from-json": "^1.7.0",
+    "lodash": "^4.17.21",
+    "octokit": "^2.0.10",
+    "plotly.js": "^2.14.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-bootstrap-range-slider": "^3.0.8",
+    "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
+    "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.4.0",
+    "react-simple-maps": "^3.0.0",
+    "recharts": "^2.1.14"
+  },
+  "devDependencies": {
+    "@types/plotly.js": "^2.12.2",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-plotly.js": "^2.5.1",
+    "@vitejs/plugin-react": "^2.1.0",
+    "gh-pages": "^4.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}
