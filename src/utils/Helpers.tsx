@@ -96,7 +96,7 @@ export const fetchData = async (passedProfileList: ProfileObj | undefined) => {
   let bValue: number = 0;
   try {
     const data = await csv(
-      "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+      "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
     );
     if (passedProfileList) {
       const featureVars = Object.values(passedProfileList)[0];
@@ -158,7 +158,7 @@ export const fetchDataForProfile = async (
   let newData;
   try {
     const data = await csv(
-      "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+      "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
     );
     if (passedProfileList) {
       const featureVars = Object.values(passedProfileList)[0];
@@ -215,7 +215,7 @@ export const TpFetchData = async (
   let newData;
   try {
     const data = await csv(
-      "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+      "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
     );
     if (passedProfileList) {
       const featureVars = Object.values(passedProfileList)[0];
@@ -283,7 +283,7 @@ export const ZTFetchData = async (
   let newData;
   try {
     const data = await csv(
-      "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+      "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
     );
     if (passedProfileList) {
       const featureVars = Object.values(passedProfileList)[0];

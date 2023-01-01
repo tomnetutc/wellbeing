@@ -1,12 +1,12 @@
 {
   "name": "wbeat-website",
-  "homepage": "https://tomnetutc.github.io/wbeat",
+  "homepage": "https://tomnetutc.github.io/wellbeing",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --base=https://tomnetutc.github.io/wbeat/",
+    "build": "tsc && vite build --base=https://tomnetutc.github.io/wellbeing/",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
