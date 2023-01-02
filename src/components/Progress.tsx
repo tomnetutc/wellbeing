@@ -20,7 +20,7 @@ export default function Progress({
   useEffect(() => {
     if (selectedGroup && selectedYear) {
       csv(
-        "https://raw.githubusercontent.com/tomnetutc/WBeat/main/src/data/df.csv"
+        "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
       ).then((data) => {
         if (characteristic == "wellbeing") {
           const levels: Option[] = [];

@@ -69,7 +69,7 @@ export function ZeroTrip() {
 
   useEffect(() => {
     const data = csv(
-      "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+      "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
     ).then((data) => {
       let maxYear = max(data, function (d) {
         return d.year;
@@ -131,7 +131,7 @@ export function ZeroTrip() {
       setWbavg(wbavg);
       setLoading(false);
       csv(
-        "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+        "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
       ).then((data) => {
         countObj.data = data;
       });

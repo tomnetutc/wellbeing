@@ -53,7 +53,7 @@ export default function Wellbeing(): JSX.Element {
 
   useEffect(() => {
     csv(
-      "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+      "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
     ).then((data) => {
       let maxYear = max(data, function (d) {
         return d.year;
@@ -121,7 +121,7 @@ export default function Wellbeing(): JSX.Element {
       setWbavg(wbavg);
       setLoading(false);
       csv(
-        "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+        "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
       ).then((data) => {
         countObj.data = data;
       });
@@ -166,9 +166,9 @@ export default function Wellbeing(): JSX.Element {
               profiles and compare them to the overall average and/or other
               subgroups.{" "}
               <i className="ms-1">
-                Note that the wellbeing scores over the years were computed relative to
-                the 2003 level, for which average wellbeing is assumed to be
-                100.
+                Note that the wellbeing scores over the years were computed
+                relative to the 2003 level, for which average wellbeing is
+                assumed to be 100.
               </i>
             </p>
             <Row style={{ height: "140px", marginTop: "5px" }}>

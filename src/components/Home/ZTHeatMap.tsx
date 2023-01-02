@@ -111,7 +111,7 @@ export default function ZTHeatMap(): JSX.Element | null {
 
   useEffect(() => {
     csv(
-      "https://raw.githubusercontent.com/tomnetutc/wbeat/main/src/data/df.csv"
+      "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
     ).then((data) => {
       const maxYear = max(data, function (d) {
         return d.year;
@@ -126,7 +126,7 @@ export default function ZTHeatMap(): JSX.Element | null {
         localStorage.removeItem(old_cache);
       }
       csv(
-        "https://raw.githubusercontent.com/tomnetutc/WBeat/main/src/data/df.csv"
+        "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
       ).then((rows) => {
         // let groupedUwb = rollup(
         //   rows,
@@ -277,7 +277,7 @@ export default function ZTHeatMap(): JSX.Element | null {
       });
     } else if (new Date().getTime() > Number(localStorage.getItem(cache_key))) {
       csv(
-        "https://raw.githubusercontent.com/tomnetutc/WBeat/main/src/data/df.csv"
+        "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
       ).then((rows) => {
         // let groupedUwb = rollup(
         //   rows,
@@ -450,7 +450,7 @@ export default function ZTHeatMap(): JSX.Element | null {
   useEffect(() => {
     if (notInitialRender.current) {
       csv(
-        "https://raw.githubusercontent.com/tomnetutc/WBeat/main/src/data/df.csv"
+        "https://raw.githubusercontent.com/tomnetutc/wellbeing/main/src/data/df.csv"
       ).then((rows) => {
         // let groupedUwb = rollup(
         //   rows,
