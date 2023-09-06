@@ -1,4 +1,5 @@
 import { useAccordionButton } from "react-bootstrap";
+import React, { useEffect, useState} from "react";
 import { csv, mean, rollup } from "d3";
 import { DSVRowString } from "d3-dsv";
 import "../App.css";
@@ -575,6 +576,30 @@ export const IncomeOptions: Option[] = [
   },
 ];
 
+export const HouseholdSize: Option[] = [
+  {
+    value: "One",
+    label: "One",
+    id: "hhsize_1",
+    val: "1.0",
+    groupId: "HouseholdSize",
+  },
+  {
+    value: "Two",
+    label: "Two",
+    id: "hhsize_2",
+    val: "1.0",
+    groupId: "HouseholdSize",
+  },
+  {
+    value: "Three or more",
+    label: "Three or more",
+    id: "hhsize_3p",
+    val: "1.0",
+    groupId: "HouseholdSize",
+  },
+];
+
 const LocationOptions: Option[] = [
   {
     value: "Urban",
@@ -684,6 +709,13 @@ export const groupedOptions: GroupedOption[] = [
     options: IncomeOptions.map((obj) => ({
       ...obj,
       groupName: "Household income",
+    })),
+  },
+  {
+    label: "Household size",
+    options: HouseholdSize.map((obj) => ({
+      ...obj,
+      groupName: "Household size",
     })),
   },
   {
@@ -857,3 +889,4 @@ export function tracking() {
     getTotalCount().catch((err) => console.log(err));
   }
 }
+

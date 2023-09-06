@@ -177,10 +177,10 @@ export function ZeroTrip() {
               displayed by default. You can create your own population subgroups
               by adding profiles and compare them to the overall average and/or
               other subgroups.
-              <i className="ms-1">
+              <em className="ms-1">
                 Note that higher zero trip-making percents are indicative of
                 lower wellbeing.
-              </i>
+              </em>
             </p>
             <Row style={{ height: "140px", marginTop: "5px" }}>
               <ProfileModal

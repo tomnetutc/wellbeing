@@ -1,7 +1,10 @@
 import { Container } from "react-bootstrap";
+import { tracking } from "../../utils/Helpers";
 import "../../App.css";
+import { useEffect } from "react";
 
 export default function Footer(): JSX.Element {
+
   return (
     <Container className="text-center">
       <hr className="hr-spec" />
@@ -19,7 +22,7 @@ export default function Footer(): JSX.Element {
           padding: "30px",
         }}
       >
-        &copy; 2022 TOMNET UTC
+        &copy; 2023 TOMNET UTC
       </span>
     </Container>
   );

@@ -5,6 +5,7 @@ import {
   EducationOptions,
   RaceOptions,
   IncomeOptions,
+  HouseholdSize,
 } from "../utils/Helpers";
 import { formatYears } from "../utils/Helpers";
 import { YearMenuProps, GroupMenuProps } from "./Types";
@@ -17,6 +18,7 @@ export function GroupMenu({ setSelectedGroup }: GroupMenuProps): JSX.Element {
     { value: "education", label: "Education", category: EducationOptions },
     { value: "race", label: "Race", category: RaceOptions },
     { value: "income", label: "Household income", category: IncomeOptions },
+    { value: "hsize", label: "Household size", category: HouseholdSize},
   ];
 
   function onChangeHandler(val: any) {
