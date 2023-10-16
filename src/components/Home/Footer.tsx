@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import { tracking } from "../../utils/Helpers";
+import { hideFlagCounter, tracking } from "../../utils/Helpers";
 import "../../App.css";
 import { useEffect } from "react";
 
@@ -24,6 +24,16 @@ export default function Footer(): JSX.Element {
       >
         &copy; 2023 TOMNET UTC
       </span>
+
+
+      {/* 
+      The below code is for flagcounter. This fetches the user location, OS and browser details. 
+       */}
+
+      <a href="https://www.flagcounter.me/details/YOUR_URL">
+        <img src="https://www.flagcounter.me/YOUR_URL/" alt="Flag Counter" id="flag-counter-img" />
+      </a>
+
     </Container>
   );
 }

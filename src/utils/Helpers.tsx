@@ -1,5 +1,9 @@
 import { useAccordionButton } from "react-bootstrap";
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
+import firebase, { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore, collection, doc, updateDoc, getDoc, increment } from 'firebase/firestore';
+import firebaseConfig from '../firebaseConfig';
 import { csv, mean, rollup } from "d3";
 import { DSVRowString } from "d3-dsv";
 import "../App.css";
@@ -828,44 +832,67 @@ export const ZTfilterOption = (
   return false;
 };
 
+export function hideFlagCounter() {
+  const flagCounterImage = document.querySelector('#flag-counter-img') as HTMLImageElement;
+  if (flagCounterImage) {
+    flagCounterImage.style.display = 'none';
+  }
+}
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const analytics = getAnalytics(app);
+
 export function tracking() {
-  const UNIQUE = `wbeat`;
-  const TOTAL = `wbeattotal`;
-  const NAMESPACE = "tomnetutc.github.io";
-  const COUNT_URL = `https://api.countapi.xyz`;
+  const websiteDocRef = doc(db, "websites", "I0Tfi6aqMpIy6PfAxeAN");
 
   const unique_counter = document.getElementById("visit-count");
   const total_counter = document.getElementById("total-count");
 
   const getUniqueCount = async () => {
-    const response = await fetch(`${COUNT_URL}/get/${NAMESPACE}/${UNIQUE}`);
-    const data = await response.json();
-    setValue(data.value);
+    const docSnap = await getDoc(websiteDocRef);
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+      if (data) {
+        setValue(data.uniqueCount);
+      }
+    }
   };
 
   const getTotalCount = async () => {
-    const response = await fetch(`${COUNT_URL}/get/${NAMESPACE}/${TOTAL}`);
-    const data = await response.json();
-    setTotal(data.value);
+    const docSnap = await getDoc(websiteDocRef);
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+      if (data) {
+        setTotal(data.totalCount);
+      }
+    }
   };
 
   const incrementCountUnique = async () => {
-    const response = await fetch(`${COUNT_URL}/hit/${NAMESPACE}/${UNIQUE}`);
-    const data = await response.json();
-    setValue(data.value);
+    await updateDoc(websiteDocRef, {
+      uniqueCount: increment(1)
+    });
+    await getUniqueCount();
   };
 
   const incrementCountTotal = async () => {
-    const response = await fetch(`${COUNT_URL}/hit/${NAMESPACE}/${TOTAL}`);
-    const data = await response.json();
-    setTotal(data.value);
+    await updateDoc(websiteDocRef, {
+      totalCount: increment(1)
+    });
+    await getTotalCount();
   };
 
   const setValue = (num: number) => {
-    unique_counter!.innerText = `Unique visitors: ${num}`;
+    if (unique_counter) {
+      unique_counter.innerText = `Unique visitors: ${num}`;
+    }
   };
+
   const setTotal = (num: number) => {
-    total_counter!.innerText = `Total visits: ${num}`;
+    if (total_counter) {
+      total_counter.innerText = `Total visits: ${num}`;
+    }
   };
 
   if (localStorage.getItem("hasVisited") == null) {
@@ -877,16 +904,46 @@ export function tracking() {
   } else {
     getUniqueCount().catch((err) => console.log(err));
   }
+
   if (localStorage.getItem("expiry") == null) {
     incrementCountTotal().then(() => {
-      localStorage.setItem("expiry", (+new Date() + 60000 * 120).toString());
+      localStorage.setItem("expiry", (Date.now() + 60000 * 120).toString());
     });
   } else if (new Date().getTime() > Number(localStorage.getItem("expiry"))) {
     incrementCountTotal().then(() => {
-      localStorage.setItem("expiry", (+new Date() + 60000 * 120).toString());
+      localStorage.setItem("expiry", (Date.now() + 60000 * 120).toString());
     });
   } else {
     getTotalCount().catch((err) => console.log(err));
   }
 }
 
+// export function track() {
+//   //We'll use the below in-case there the DB is corrupted
+
+//   const unique_counter = document.getElementById("visit-count");
+//   const total_counter = document.getElementById("total-count");
+
+//   const fetchData = async () => {
+//     try {
+//       const response = await fetch('YOUR_API_ENDPOINT_URL');
+//       if (!response.ok) {
+//         throw new Error('Network response was not ok');
+//       }
+
+//       const data = await response.json();
+
+//       const { totalUniqueVisitors, totalPageviews } = data;
+
+//       console.log('Total Unique Visitors:', totalUniqueVisitors);
+//       console.log('Total Pageviews:', totalPageviews);
+
+//       unique_counter!.innerText = `Unique visitors: ${totalUniqueVisitors}`;
+//       total_counter!.innerText = `Total visits: ${totalPageviews}`;
+//     } catch (error) {
+//       console.error('Error fetching data:', error);
+//     }
+//   };
+
+//   fetchData();
+// }
