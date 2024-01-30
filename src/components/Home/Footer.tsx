@@ -13,7 +13,7 @@ export default function Footer(): JSX.Element {
         <span id="total-count"></span>
       </div>
       <span className="d-block mb-3 mt-3 fst-italic">
-        For any inquiries or feedback, please contact Irfan Batur at
+        For any inquiries or feedback, please contact Dr. Irfan Batur at
         <a className="ms-1">ibatur@asu.edu</a>
       </span>
       <span
@@ -22,7 +22,7 @@ export default function Footer(): JSX.Element {
           padding: "30px",
         }}
       >
-        &copy; 2023 TOMNET UTC
+        &copy; 2024 TOMNET UTC
       </span>
 
 

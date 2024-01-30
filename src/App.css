@@ -164,6 +164,10 @@
   justify-content: start;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 .contenthead::before {
   display: block; 
   content: " "; 

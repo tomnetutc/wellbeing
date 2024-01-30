@@ -41,7 +41,7 @@ export function Content(): JSX.Element {
           </p>
           <p>
             <i>
-              For any inquiries or feedback, please contact Irfan Batur at
+              For any inquiries or feedback, please contact Dr. Irfan Batur at
               <a className="ms-1">ibatur@asu.edu</a>.
             </i>
           </p>
@@ -183,9 +183,10 @@ export function Content(): JSX.Element {
           </p>
           <ol>
             <li className="mt-4">
-              Kalenkoski, C. M., & Hamrick, K. S. (2013). How does time poverty
-              affect behavior? A look at eating and physical activity. Applied
-              Economic Perspectives and Policy, 35(1), 89-105.
+              Batur, I., Dirks, A. C., Bhat, C. R., Polzin, S. E., Chen, C., & Pendyala, R. M. (2023).
+              Analysis of Changes in Time Use and Activity Participation in Response to the COVID-19 Pandemic in the United States: Implications for well-being.
+              Transportation Research Record, 03611981231165020.&nbsp;
+              <a href="https://doi.org/10.1177/03611981231165020" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/03611981231165020</a>
             </li>
             <li className="mt-4">
               Batur, I., Sharda, S., Kim, T., Khoeini, S., Pendyala, R. M., &
@@ -193,10 +194,9 @@ export function Content(): JSX.Element {
               Are They Connected and How Much Does Mobility Matter?.
             </li>
             <li className="mt-4">
-              Batur, I., Dirks, A. C., Pendyala, R. M., Bhat, C. R., Polzin, S.
-              E., & Chen, C. An Analysis of Changes in Time Use and Activity
-              Participation in Response to the COVID-2019 Pandemic in the United
-              States: Implications for Well-being.
+              Kalenkoski, C. M., & Hamrick, K. S. (2013). How does time poverty
+              affect behavior? A look at eating and physical activity. Applied
+              Economic Perspectives and Policy, 35(1), 89-105.
             </li>
           </ol>
         </section>
@@ -301,8 +301,15 @@ export function Content(): JSX.Element {
             Credits
           </h3>
           <p className="mt-4">
-            Irfan Batur, P. Srikanth Kini, Ram M. Pendyala, Sara Khoeini, Denise
-            Capasso da Silva, Shivam Sharda, Xin Ye, Taehooie Kim, Chandra Bhat
+          <a href="https://search.asu.edu/profile/3243599" target="_blank" className="no-underline">Irfan Batur</a>,
+          <a href="https://www.linkedin.com/in/srikanth-kini/" target="_blank" className="no-underline"> P. Srikanth Kini</a>,
+          <a href="https://search.asu.edu/profile/980477" target="_blank" className="no-underline"> Ram M. Pendyala</a>,
+          <a href="https://sustainability-innovation.asu.edu/person/sara-khoeini/" target="_blank" className="no-underline"> Sara Khoeini</a>,
+          <a href="https://www.linkedin.com/in/denisecapassosilva/" target="_blank" className="no-underline"> Denise Capasso da Silva</a>,
+          <a href="https://www.linkedin.com/in/shivam-sharda/" target="_blank" className="no-underline"> Shivam Sharda</a>,
+          <a href="https://tjtdm.tongji.edu.cn/ywsy/Team.htm" target="_blank" className="no-underline"> Xin Ye</a>,
+          <a href="https://www.linkedin.com/in/taehooie-kim-a62b75160/" target="_blank" className="no-underline"> Taehooie Kim</a>,
+          <a href="https://www.caee.utexas.edu/prof/bhat/home.html" target="_blank" className="no-underline"> Chandra Bhat</a>
           </p>
           <p className="mt-4">
             <b>Note:</b> When using any material from this website, please cite
@@ -310,9 +317,14 @@ export function Content(): JSX.Element {
           </p>
           <ol>
             <li className="mt-4">
-              Khoeini, S., D. Capasso da Silva, S. Sharda, and R. M. Pendyala.
-              An Integrated Model of Activity-Travel Behavior and Subjective
-              Wellbeing. TOMNET Transportation Center, 2018.
+              Batur, I., Dirks, A. C., Bhat, C. R., Polzin, S. E., Chen, C., & Pendyala, R. M. (2023).
+              Analysis of Changes in Time Use and Activity Participation in Response to the COVID-19 Pandemic in the United States: Implications for well-being.
+              Transportation Research Record, 03611981231165020.&nbsp;
+              <a href="https://doi.org/10.1177/03611981231165020" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/03611981231165020</a>
+            </li>
+            <li className="mt-4">
+              Batur, I. (2023). Understanding and Modeling the Nexus of Mobility, Time Poverty, and Wellbeing (Doctoral dissertation, Arizona State University).&nbsp;
+              <a href="https://hdl.handle.net/2286/R.2.N.189319" target="_blank" rel="noopener noreferrer">https://hdl.handle.net/2286/R.2.N.189319</a>
             </li>
             <li className="mt-4">
               Batur, I., S. Sharda, T. Kim, S. Khoeini, R.M. Pendyala, and C.R.
@@ -321,11 +333,9 @@ export function Content(): JSX.Element {
               University, Working Paper, 2020.
             </li>
             <li className="mt-4">
-              Batur, I., Dirks, A. C., Pendyala, R. M., Bhat, C. R., Polzin, S.
-              E., & Chen, C. An Analysis of Changes in Time Use and Activity
-              Participation in Response to the COVID-2019 Pandemic in the United
-              States: Implications for Well-being. Arizona State University,
-              Working Paper, 2022.
+              Khoeini, S., D. Capasso da Silva, S. Sharda, and R. M. Pendyala.
+              An Integrated Model of Activity-Travel Behavior and Subjective
+              Wellbeing. TOMNET Transportation Center, 2018.
             </li>
           </ol>
         </section>
