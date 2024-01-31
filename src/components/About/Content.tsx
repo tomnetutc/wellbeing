@@ -189,9 +189,8 @@ export function Content(): JSX.Element {
               <a href="https://doi.org/10.1177/03611981231165020" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/03611981231165020</a>
             </li>
             <li className="mt-4">
-              Batur, I., Sharda, S., Kim, T., Khoeini, S., Pendyala, R. M., &
-              Bhat, C. R. (2019). Mobility, Time Poverty, and Well-Being: How
-              Are They Connected and How Much Does Mobility Matter?.
+              Batur, I. (2023). Understanding and Modeling the Nexus of Mobility, Time Poverty, and Wellbeing (Doctoral dissertation, Arizona State University).&nbsp;
+              <a href="https://hdl.handle.net/2286/R.2.N.189319" target="_blank" rel="noopener noreferrer">https://hdl.handle.net/2286/R.2.N.189319</a>
             </li>
             <li className="mt-4">
               Kalenkoski, C. M., & Hamrick, K. S. (2013). How does time poverty
@@ -303,6 +302,8 @@ export function Content(): JSX.Element {
           <p className="mt-4">
           <a href="https://search.asu.edu/profile/3243599" target="_blank" className="no-underline">Irfan Batur</a>,
           <a href="https://www.linkedin.com/in/srikanth-kini/" target="_blank" className="no-underline"> P. Srikanth Kini</a>,
+          <a href="https://www.linkedin.com/in/ashwathbhat98/" target="_blank" className="no-underline"> Ashwath Bhat Laxminarayana</a>,
+          <a href="https://www.linkedin.com/in/roshan--varghese/" target="_blank" className="no-underline"> Roshan Varghese</a>,
           <a href="https://search.asu.edu/profile/980477" target="_blank" className="no-underline"> Ram M. Pendyala</a>,
           <a href="https://sustainability-innovation.asu.edu/person/sara-khoeini/" target="_blank" className="no-underline"> Sara Khoeini</a>,
           <a href="https://www.linkedin.com/in/denisecapassosilva/" target="_blank" className="no-underline"> Denise Capasso da Silva</a>,
