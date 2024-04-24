@@ -1,11 +1,11 @@
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGIND_SENDER_ID",
-    appId: "YOUR_APP_ID",
-    measurementId: "YOUR_MEASUREMENT_ID"
+    apiKey: "AIzaSyA7fSjH84MFxofiyhTO4ySbQZtr8LOkhMA",
+    authDomain: "tomnet-counter.firebaseapp.com",
+    projectId: "tomnet-counter",
+    storageBucket: "tomnet-counter.appspot.com",
+    messagingSenderId: "955399981396",
+    appId: "1:955399981396:web:c9f2721b8b1f3647a060c1",
+    measurementId: "G-9QH6JBK3F4"
 };
 
 export default firebaseConfig;

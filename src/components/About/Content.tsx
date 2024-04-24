@@ -297,7 +297,7 @@ export function Content(): JSX.Element {
         </section>
         <section style={{ textAlign: "justify" }}>
           <h3 id="section6" className="mt-4 fw-bold contenthead">
-            Credits
+            Team
           </h3>
           <p className="mt-4">
           <a href="https://search.asu.edu/profile/3243599" target="_blank" className="no-underline">Irfan Batur</a>,
@@ -312,6 +312,12 @@ export function Content(): JSX.Element {
           <a href="https://www.linkedin.com/in/taehooie-kim-a62b75160/" target="_blank" className="no-underline"> Taehooie Kim</a>,
           <a href="https://www.caee.utexas.edu/prof/bhat/home.html" target="_blank" className="no-underline"> Chandra Bhat</a>
           </p>
+          </section>
+          
+          <section style={{ textAlign: "justify" }}>
+          <h3 id="section7" className="mt-4 fw-bold contenthead">
+            Citations
+          </h3>
           <p className="mt-4">
             <b>Note:</b> When using any material from this website, please cite
             the relevant papers listed below.

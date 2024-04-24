@@ -30,10 +30,10 @@ export default function Footer(): JSX.Element {
       The below code is for flagcounter. This fetches the user location, OS and browser details. 
        */}
 
-      <a href="https://www.flagcounter.me/details/YOUR_URL">
-        <img src="https://www.flagcounter.me/YOUR_URL/" alt="Flag Counter" id="flag-counter-img" />
+      <a href="https://www.flagcounter.me/details/d6l">
+        <img src="https://www.flagcounter.me/d6l/" alt="Flag Counter" id="flag-counter-img" />
       </a>
-
+    
     </Container>
   );
 }

@@ -44,7 +44,12 @@ export function Sidebar(): JSX.Element {
             </li>
             <li className="sidenavbarlistitem">
               <Link style={LinkStyle} to="/about#section6">
-                Credits
+                Team
+              </Link>
+            </li>
+            <li className="sidenavbarlistitem">
+              <Link style={LinkStyle} to="/about#section7">
+                Citations
               </Link>
             </li>
           </ul>
