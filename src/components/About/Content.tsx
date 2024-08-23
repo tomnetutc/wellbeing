@@ -305,11 +305,6 @@ export function Content(): JSX.Element {
           <a href="https://www.linkedin.com/in/ashwathbhat98/" target="_blank" className="no-underline"> Ashwath Bhat Laxminarayana</a>,
           <a href="https://www.linkedin.com/in/roshan--varghese/" target="_blank" className="no-underline"> Roshan Varghese</a>,
           <a href="https://search.asu.edu/profile/980477" target="_blank" className="no-underline"> Ram M. Pendyala</a>,
-          <a href="https://sustainability-innovation.asu.edu/person/sara-khoeini/" target="_blank" className="no-underline"> Sara Khoeini</a>,
-          <a href="https://www.linkedin.com/in/denisecapassosilva/" target="_blank" className="no-underline"> Denise Capasso da Silva</a>,
-          <a href="https://www.linkedin.com/in/shivam-sharda/" target="_blank" className="no-underline"> Shivam Sharda</a>,
-          <a href="https://tjtdm.tongji.edu.cn/ywsy/Team.htm" target="_blank" className="no-underline"> Xin Ye</a>,
-          <a href="https://www.linkedin.com/in/taehooie-kim-a62b75160/" target="_blank" className="no-underline"> Taehooie Kim</a>,
           <a href="https://www.caee.utexas.edu/prof/bhat/home.html" target="_blank" className="no-underline"> Chandra Bhat</a>
           </p>
           </section>
@@ -323,6 +318,11 @@ export function Content(): JSX.Element {
             the relevant papers listed below.
           </p>
           <ol>
+            <li className="mt-4">
+            Batur, Irfan & Khoeini, Sara & Sharda, Shivam & Magassy, Tassio & Ye, Xin & Pendyala, Ram. (2024). A Methodology for Evaluating Wellbeing Implications 
+            of Activity-Travel Engagement and Time Use Patterns. 10.13140/RG.2.2.35575.64164. &nbsp;
+              <a href="http://dx.doi.org/10.13140/RG.2.2.35575.64164" target="_blank" rel="noopener noreferrer">http://dx.doi.org/10.13140/RG.2.2.35575.64164</a>
+            </li>
             <li className="mt-4">
               Batur, I., Dirks, A. C., Bhat, C. R., Polzin, S. E., Chen, C., & Pendyala, R. M. (2023).
               Analysis of Changes in Time Use and Activity Participation in Response to the COVID-19 Pandemic in the United States: Implications for well-being.
