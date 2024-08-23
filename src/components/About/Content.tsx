@@ -309,7 +309,7 @@ export function Content(): JSX.Element {
           </p>
           </section>
           
-          <section style={{ textAlign: "justify" }}>
+          <section style={{}}>
           <h3 id="section7" className="mt-4 fw-bold contenthead">
             Citations
           </h3>
@@ -319,8 +319,8 @@ export function Content(): JSX.Element {
           </p>
           <ol>
             <li className="mt-4">
-            Batur, Irfan & Khoeini, Sara & Sharda, Shivam & Magassy, Tassio & Ye, Xin & Pendyala, Ram. (2024). A Methodology for Evaluating Wellbeing Implications 
-            of Activity-Travel Engagement and Time Use Patterns. 10.13140/RG.2.2.35575.64164. &nbsp;
+              Batur, I., Irfan, S., Khoeini, S., Sharda, S., Magassy, T., Ye, X., & Pendyala, R. (2024). A Methodology for Evaluating Wellbeing Implications of Activity-Travel
+              Engagement and Time Use Patterns, 10.13140/RG.2.2.35575.64164.&nbsp;
               <a href="http://dx.doi.org/10.13140/RG.2.2.35575.64164" target="_blank" rel="noopener noreferrer">http://dx.doi.org/10.13140/RG.2.2.35575.64164</a>
             </li>
             <li className="mt-4">
