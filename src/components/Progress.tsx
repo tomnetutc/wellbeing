@@ -122,8 +122,11 @@ export default function Progress({
           const levels: Option[] = [];
           selectedGroup.map((group) => {
             function filterCriteria(d: DSVRowString<string>) {
-              return d[group.id] == group.val;
-            }
+              if (Number(d[group.id]) === Number(group.val)) {
+                return true; // This means the criteria matches
+              }
+              return false;
+            }            
             let filteredData;
             let allGroupedUwb;
             let tpNewData;
