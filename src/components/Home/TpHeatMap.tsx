@@ -747,7 +747,7 @@ export default function TpHeatMap(): JSX.Element | null {
                   style={{ backgroundColor: "#FBFCF2" }}
                 >
                   <span>
-                    {finalValues[finalValues.length - 1 - idx][1].toFixed(1) + "%"}
+                    {finalValues[finalValues.length - 1 - idx][1]?.toFixed(1) + "%"}
                   </span>
                 </Col>
                 <Col lg={3}></Col>
@@ -778,7 +778,7 @@ export default function TpHeatMap(): JSX.Element | null {
                   className="border text-center"
                   style={{ backgroundColor: "#FBFCF2" }}
                 >
-                  <span>{finalValues[4 - idx][1].toFixed(1) + "%"}</span>
+                  <span>{finalValues[4 - idx][1]?.toFixed(1) + "%"}</span>
                 </Col>
                 <Col lg={3}></Col>
               </Row>

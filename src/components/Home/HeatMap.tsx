@@ -715,7 +715,7 @@ export default function HeatMap(): JSX.Element | null {
                   className="border text-center"
                   style={{ backgroundColor: "#FBFCF2" }}
                 >
-                  <span>{finalValues[idx][1].toFixed(1)}</span>
+                  <span>{finalValues[idx][1]?.toFixed(1)}</span>
                 </Col>
                 <Col lg={3}></Col>
               </Row>
@@ -746,7 +746,7 @@ export default function HeatMap(): JSX.Element | null {
                   className="border text-center"
                   style={{ backgroundColor: "#FBFCF2" }}
                 >
-                  <span>{finalValues[finalValues.length - 5 + idx][1].toFixed(1)}</span>
+                  <span>{finalValues[finalValues.length - 5 + idx][1]?.toFixed(1)}</span>
                 </Col>
                 <Col lg={3}></Col>
               </Row>
