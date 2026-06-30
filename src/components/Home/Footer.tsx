@@ -22,7 +22,7 @@ export default function Footer(): JSX.Element {
           padding: "30px",
         }}
       >
-        &copy; 2024 TOMNET UTC
+        &copy; 2025 TOMNET UTC
       </span>
 
 
